@@ -9,7 +9,7 @@ int songuyento (int n) {                //hàm kiểm tra số nguyên tố
     return 1;
 }
 
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[]) { 
     if (argc != 3) {
         printf("Usage: %s <number1> <number2>\n", argv[0]);
         return 1;
@@ -32,6 +32,6 @@ int main(int argc, char *argv[]) {
             if (songuyento(i))
                 printf ("%d ",i);
             }
-    
+    printf ("\n");
     return 0;
 }
