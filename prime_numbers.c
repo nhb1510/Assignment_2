@@ -21,7 +21,7 @@ int main(int argc, char *argv[]) {
     int a = atoi(argv[1]);     // gán giá trị cho 2 số a b
     int b = atoi(argv[2]);
 
-    if (!(1 <= a && a <= b && b <= 1000000000)) // điều kiện 2 số a<=b a b lớn hơn 1 và nhỏ hơn 10^9
+    if (!(1 <= a || a <= b || b <= 1000000000)) // điều kiện 2 số a<=b a b lớn hơn 1 và nhỏ hơn 10^9
     {
         printf ("Giá trị 2 số không thỏa mãn, vui lòng nhập 2 số a b theo điều kiện sau đây  (1 <= a <= b <= 10^9)\n");
         return 1;
