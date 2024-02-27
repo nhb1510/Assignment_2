@@ -15,7 +15,7 @@ int main(int argc, char *argv[]) {
         return 1;
     }
     
-    if ((atoi(argv[1])<0) && atoi(argv[2])<0) // kiểm tra 2 số a b >0
+    if ((atoi(argv[1])<0) || atoi(argv[2])<0) // kiểm tra 2 số a b >0
         printf ("2 số phải là số nguyên dương\n");
 
     int a = atoi(argv[1]);     // gán giá trị cho 2 số a b
